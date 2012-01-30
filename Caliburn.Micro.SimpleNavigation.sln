@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caliburn.Micro.SimpleNavigation", "Caliburn.Micro.SimpleNavigation\Caliburn.Micro.SimpleNavigation.csproj", "{EF8546AF-1D38-4F3F-AF88-942ECE42C565}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caliburn.Micro.Navigation", "Caliburn.Micro.Navigation\Caliburn.Micro.Navigation.csproj", "{5216D75E-29FB-4E14-9FCF-A3A3430C62C3}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs24
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Caliburn.Micro.Navigation\\Caliburn.Micro.Navigation.csproj
+		SccProjectName1 = Caliburn.Micro.Navigation
+		SccLocalPath1 = Caliburn.Micro.Navigation
+		SccProjectUniqueName2 = Caliburn.Micro.SimpleNavigation\\Caliburn.Micro.SimpleNavigation.csproj
+		SccProjectName2 = Caliburn.Micro.SimpleNavigation
+		SccLocalPath2 = Caliburn.Micro.SimpleNavigation
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF8546AF-1D38-4F3F-AF88-942ECE42C565}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF8546AF-1D38-4F3F-AF88-942ECE42C565}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF8546AF-1D38-4F3F-AF88-942ECE42C565}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF8546AF-1D38-4F3F-AF88-942ECE42C565}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5216D75E-29FB-4E14-9FCF-A3A3430C62C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5216D75E-29FB-4E14-9FCF-A3A3430C62C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5216D75E-29FB-4E14-9FCF-A3A3430C62C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5216D75E-29FB-4E14-9FCF-A3A3430C62C3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
