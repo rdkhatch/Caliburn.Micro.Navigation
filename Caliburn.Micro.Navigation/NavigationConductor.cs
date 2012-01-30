@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Caliburn.Micro.Navigation.Helpers;
 
 namespace Caliburn.Micro.Navigation
@@ -58,8 +59,21 @@ namespace Caliburn.Micro.Navigation
                 else
                     item = ActiveItem;
             }
-            if (ActiveItem == item && item is INavigationAware && !string.IsNullOrEmpty(targetUri.Query)) //activation successful
-                ((INavigationAware)ActiveItem).QueryString = NavUtility.ParseQueryString(targetUri.Query);
+
+            if (ActiveItem == item && item is INavigationAware) //activation successful
+            {
+                var navAwareItem = (INavigationAware)item;
+
+                // Set Query String
+                if (!string.IsNullOrEmpty(targetUri.Query))
+                    navAwareItem.QueryString = NavUtility.ParseQueryString(targetUri.Query);
+                else
+                    navAwareItem.QueryString = new Dictionary<string, string>();
+
+                // Call OnNavigatedTo
+                navAwareItem.OnNavigatedTo(targetUri);
+            }
+
         }
 
         private Uri frameSource;

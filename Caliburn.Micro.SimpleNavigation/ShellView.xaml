@@ -12,7 +12,7 @@
 			        Content="Show Page Two" />
 		</StackPanel>
 
-        <Controls:Frame x:Name="ActiveItem" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" >
+        <Controls:Frame x:Name="ActiveItem" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Navigated="FrameNavigated" NavigationFailed="FrameNavigationFailed" >
             <Controls:Frame.ContentLoader>
                 <Navigation:CaliburnContentLoader/>
             </Controls:Frame.ContentLoader>
